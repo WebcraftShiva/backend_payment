@@ -1,0 +1,45 @@
+{
+  "name": "payment-backend-api",
+  "version": "1.0.0",
+  "description": "A comprehensive payment processing backend API with support for multiple payment gateways including UPI Gateway and Easebuzz",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node start-server.js",
+    "dev:watch": "nodemon start-server.js",
+    "test": "jest",
+    "test:db": "node scripts/testMongoConnection.js",
+    "seed": "node scripts/seedData.js"
+  },
+  "keywords": [
+    "payment",
+    "gateway",
+    "easebuzz",
+    "upi",
+    "api"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.5.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.10.0",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.0.0",
+    "js-sha512": "^0.9.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.0",
+    "morgan": "^1.10.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "mongodb-memory-server": "^10.4.1",
+    "nodemon": "^3.0.1"
+  }
+}
